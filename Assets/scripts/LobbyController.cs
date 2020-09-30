@@ -38,10 +38,19 @@ public class LobbyController : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom("Room" + randomRoomNumber, options);
     }
 
+    public override void OnCreateRoomFailed(short returnCode, string message)
+    {
+        CreateRoom();
+    }
 
-   
 
-   
+    public void Cancel()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
+
+
 
     // Start is called before the first frame update
     void Start()
