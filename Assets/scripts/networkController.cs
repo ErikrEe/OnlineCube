@@ -9,8 +9,8 @@ public class networkController : MonoBehaviourPunCallbacks
 
     [SerializeField]
     Button startButton;
-    [SerializeField]
-    InputField nameField;
+  //  [SerializeField]
+  //  InputField nameField;
 
 
 
