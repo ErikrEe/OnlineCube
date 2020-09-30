@@ -312,7 +312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 1665781363}
-  nameField: {fileID: 0}
 --- !u!4 &536997818
 Transform:
   m_ObjectHideFlags: 0

@@ -17,12 +17,15 @@ public class GameSetup : MonoBehaviour
     {
         if(PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "Player1"), Vector3.zero, Quaternion.identity);
+            PhotonNetwork.Instantiate("Player1", Vector3.zero, Quaternion.identity);
         }
         else
         {
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "Player2"), Vector3.zero, Quaternion.identity);
+            PhotonNetwork.Instantiate("Player2", Vector3.zero, Quaternion.identity);
         }
+
+        print("Created players");
+
     }
 
 

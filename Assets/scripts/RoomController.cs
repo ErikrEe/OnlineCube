@@ -28,7 +28,7 @@ public class RoomController : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             print("starting game...");
-            PhotonNetwork.LoadLevel(SceneIndex);
+            PhotonNetwork.LoadLevel(1);
         }
     }
     // Start is called before the first frame update
