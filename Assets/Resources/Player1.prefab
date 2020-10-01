@@ -103,6 +103,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 7539532144813069252}
+  - {fileID: 3335460473568794699}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -139,7 +140,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-8533038002891151228
 BoxCollider2D:
   m_ObjectHideFlags: 0
