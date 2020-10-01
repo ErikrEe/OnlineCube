@@ -7,7 +7,7 @@ using Photon.Realtime;
 public class Movement : MonoBehaviourPunCallbacks
 {
 
-    
+    public PhotonView photonView;
     
     Rigidbody2D body;
 
@@ -19,7 +19,7 @@ public class Movement : MonoBehaviourPunCallbacks
     void Start()
     {
 
-        enabled = photonView.isMine;
+        enabled = photonView.IsMine;
         body = GetComponent<Rigidbody2D>();
     }
 
