@@ -19,15 +19,20 @@ public class Movement : MonoBehaviourPunCallbacks
     void Start()
     {
 
-        enabled = photonView.IsMine;
         body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
 
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+
+        if(photonView.IsMine)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+        }
+
+        
     }
 
     private void FixedUpdate()
