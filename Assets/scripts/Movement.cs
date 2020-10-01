@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class Movement : MonoBehaviour
+public class Movement : MonoBehaviourPunCallbacks
 {
+
+    
+    
     Rigidbody2D body;
 
     float horizontal;
@@ -13,11 +18,14 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+
+        enabled = photonView.isMine;
         body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
     }

@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class Movement2 : MonoBehaviour
+public class Movement2 : MonoBehaviourPunCallbacks
 {
     Rigidbody2D body;
 
@@ -13,6 +15,7 @@ public class Movement2 : MonoBehaviour
 
     void Start()
     {
+        enabled = photonView.IsMine;
         body = GetComponent<Rigidbody2D>();
     }
 
