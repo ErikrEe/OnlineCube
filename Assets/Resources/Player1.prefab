@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326c68a7f1372f749a48d2c1149b947e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: -5276561011347418326}
   runSpeed: 10
 --- !u!50 &-3758860453670697348
 Rigidbody2D:

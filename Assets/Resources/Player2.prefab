@@ -197,4 +197,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd5d83ebdb8fc34eb29de31e3a55a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: -5467355333090420828}
   runSpeed: 10
